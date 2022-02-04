@@ -196,7 +196,7 @@ const Profile = (props) => {
         }
 
         if (window.confirm("Are you sure you want to delete this post?")) {
-            await axios.delete(`http://localhost:8000/api/post/${postID}`, { withCredentials: true })
+            await axios.delete(`http://localhost:8000/api/post/${ postID }`, { withCredentials: true })
                 .catch(err => {
                     setEditErrors({ err }.err.response.data.errors)
                 });
