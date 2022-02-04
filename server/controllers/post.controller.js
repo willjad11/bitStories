@@ -41,7 +41,6 @@ module.exports.getProfilePosts = (request, response) => {
 }
 
 module.exports.updatePost = (request, response) => {
-    console.log("meme")
     Post.findOneAndUpdate({ _id: request.params.id }, request.body, { new: true, runValidators: true })
         .then(updatedPost => response.json(updatedPost))
         .catch(err => response.status(400).json(err))
