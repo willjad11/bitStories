@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const Profile = (props) => {
-    const [editedPostID, setEditedPostID] = useState({});
+    const [editedPostID, setEditedPostID] = useState("");
     const [profileError, setProfileError] = useState();
     const [userProfile, setUserProfile] = useState([]);
     const [newEditPost, setNewEditPost] = useState("");
@@ -177,6 +177,10 @@ const Profile = (props) => {
     }
 
     const editPost = (postID) => {
+        editedPostID && 
+            postID != editedPostID && 
+                document.getElementById(`post${ editedPostID }_editContent`).style.display == "" &&
+                    editPost(editedPostID)
         setEditedPostID(postID);
         setNewEditPost(document.getElementById(`post${ postID }_content_post`).innerText)
         if (document.getElementById(`post${ postID }_content`).style.display == "") {
