@@ -1,24 +1,26 @@
+import styles from '../components/css/bitStories.module.css'
 import React, { useState, useEffect } from 'react';
+import LoginForm from '../components/LoginForm';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
-import LoginForm from '../components/LoginForm';
-import styles from '../components/css/bitStories.module.css'
 
 const LoginPage = (props) => {
     const [registerErrors, setRegisterErrors] = useState({});
     const [loginError, setLoginError] = useState({});
+    const { user, setUser } = props;
     const history = useHistory();
-    const {user, setUser} = props;
 
-    useEffect(() => {
-        user && localStorage.setItem('userid', user.id);
+    useEffect(async () => {
+        user && 
+            localStorage.setItem('userid', user.id);
         localStorage.getItem('userid') && 
             !user && 
-                axios.get(`http://localhost:8000/api/users/${localStorage.getItem('userid')}`)
+                await axios.get(`http://localhost:8000/api/users/${localStorage.getItem('userid')}`, { withCredentials: true })
                     .then(res => {
                         setUser(res.data)
                     })
-        user && history.push('/feed');
+        user && 
+            history.push('/feed');
     }, [user]);
 
     const createUser = registerForm => {
@@ -46,11 +48,16 @@ const LoginPage = (props) => {
 
     return (
         <div>
-            <div className={styles.navbar}>
+            <div className={ styles.navbar }>
                 <h1>bitStories</h1>
             </div>
-            <div className={styles.pageCont}>
-                <LoginForm onSubmitRegisterForm={createUser} onSubmitLoginForm={loginUser} registerErrors={registerErrors} loginError={loginError} />
+            <div className={ styles.pageCont }>
+                <LoginForm 
+                    onSubmitRegisterForm={createUser} 
+                    onSubmitLoginForm={loginUser} 
+                    registerErrors={registerErrors} 
+                    loginError={loginError} 
+                />
             </div>
         </div>
     )

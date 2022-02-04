@@ -8,6 +8,7 @@ const Profile = (props) => {
     const [editedPostID, setEditedPostID] = useState({});
     const [profileError, setProfileError] = useState();
     const [userProfile, setUserProfile] = useState([]);
+    const [newEditPost, setNewEditPost] = useState("");
     const [editErrors, setEditErrors] = useState({});
     const [postErrors, setPostErrors] = useState({});
     const [follower, setFollower] = useState(null);
@@ -15,7 +16,6 @@ const Profile = (props) => {
     const [refresh, setRefresh] = useState(false);
     const [loaded, setLoaded] = useState(false);
     const [newPost, setNewPost] = useState("");
-    const [newEditPost, setNewEditPost] = useState("");
     const [posts, setPosts] = useState([]);
     const { user, setUser } = props;
     const history = useHistory();
