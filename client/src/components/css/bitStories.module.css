@@ -1,0 +1,437 @@
+.loginPageCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerForm, .loginForm {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 15px;;
+    padding: 10px;
+    margin: 25px;
+}
+
+.registerForm > *, .loginForm > * {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.registerForm > h1, .loginForm > h1 {
+    margin: 0px auto;
+    padding-bottom: 20px;
+}
+
+.registerForm > input, .loginForm > input {
+    margin: 20px auto;
+}
+
+.input > input {
+    width: 150px;
+    height: 15px;
+}
+
+.logoutButton {
+    cursor: pointer;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 2px 12px 2px 12px;
+    border: solid #1f628d 1px;
+    text-decoration: none;
+}
+
+.logoutButton:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+.navbar {
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 75%;
+}
+
+.navbar > h1 {
+    margin: 25px;
+    font-size: xxx-large;
+}
+
+.navRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+
+.feedCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.followButton {
+    cursor: pointer;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 5px 12px 5px 12px;
+    border: solid #1f628d 1px;
+    text-decoration: none;
+}
+
+.followButton:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+.profileChangeAvatar {
+    cursor: pointer;
+    margin-top: 10px;
+    background: #4aa4e0;
+    background-image: -webkit-linear-gradient(top, #4aa4e0, #6290ad);
+    background-image: -moz-linear-gradient(top, #4aa4e0, #6290ad);
+    background-image: -ms-linear-gradient(top, #4aa4e0, #6290ad);
+    background-image: -o-linear-gradient(top, #4aa4e0, #6290ad);
+    background-image: linear-gradient(to bottom, #4aa4e0, #6290ad);
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 5px 12px 5px 12px;
+    border: solid #1f628d 1px;
+    text-decoration: none;
+}
+
+.profileChangeAvatar:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+.profileSubmitPost {
+    cursor: pointer;
+    background: #1ca4ff;
+    background-image: -webkit-linear-gradient(top, #1ca4ff, #2c6385);
+    background-image: -moz-linear-gradient(top, #1ca4ff, #2c6385);
+    background-image: -ms-linear-gradient(top, #1ca4ff, #2c6385);
+    background-image: -o-linear-gradient(top, #1ca4ff, #2c6385);
+    background-image: linear-gradient(to bottom, #1ca4ff, #2c6385);
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 5px 20px 5px 20px;
+    border: solid #1f628d 1px;
+    text-decoration: none;
+}
+
+.profileSubmitPost:hover {
+    background: #4ca7e0;
+    background-image: -webkit-linear-gradient(top, #4ca7e0, #719db8);
+    background-image: -moz-linear-gradient(top, #4ca7e0, #719db8);
+    background-image: -ms-linear-gradient(top, #4ca7e0, #719db8);
+    background-image: -o-linear-gradient(top, #4ca7e0, #719db8);
+    background-image: linear-gradient(to bottom, #4ca7e0, #719db8);
+    text-decoration: none;
+}
+
+.avatar {
+    max-height: 150px;
+    max-width: auto;
+    border-radius: 15px;
+    border-top: 3px solid lightseagreen;
+    border-left: 3px solid lightseagreen;
+    border-right: 3px solid lightseagreen;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+.followerInnerBox {
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 15px 15px 15px;
+}
+
+.followerInList {
+    display: flex;
+    align-items: center;
+    margin: -10px 0px -10px 0px;
+}
+
+.followerInList  > img {
+    margin-right: 10px;
+}
+
+.followerListCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+    width: 100%;
+    border: 3px solid grey;
+    border-radius: 15px;
+    height: fit-content;
+    padding: 5px;
+}
+
+.followerListCont > h3 {
+    text-align: center;
+}
+
+.followerListAvatar {
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 15px;
+    border-top: 3px solid green;
+    border-left: 3px solid green;
+    border-right: 3px solid green;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.followerListAvatar:hover {
+    transform: scale(1.1);
+}
+
+.profileAvatar {
+    max-height: 400px;
+    max-width: 400px;
+    border-radius: 15px;
+}
+.profileCont {
+    display: flex;
+    justify-content: center;
+}
+
+.profileCont > * {
+    margin: 100px 5% 5%;
+}
+
+.profileContLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileTextArea {
+    width: 300px;
+    height: 75px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.profileEditPostTextArea {
+    width: 90%;
+    height: 75px;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 5px
+}
+
+.profileForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileForm > input {
+    width: 75px;
+    margin: 15px;
+}
+
+.feedPost {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: fit-content;
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.feedAvatar {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 30px;
+    border-top: 3px solid darkkhaki;
+    border-left: 3px solid darkkhaki;
+    border-right: 3px solid darkkhaki;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.feedAvatar:hover {
+    transform: scale(1.1);
+}
+
+.feedProfileName {
+    margin: 10px;
+}
+
+.feedPostDate {
+    display: flex;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.feedPostContent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    word-wrap: anywhere;
+    padding-left: 15px;
+    border-left: 3px solid grey;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.profileName > p, .feedProfileName > p {
+    font-weight: bold;
+}
+
+.profilePost {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: fit-content;
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.profilePostContent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    word-wrap: anywhere;
+    padding-left: 15px;
+    border-left: 3px solid grey;
+    border-radius: 50px;
+}
+
+.profilePostFooter {
+    display: flex;
+    font-weight: lighter;
+    font-size: small;
+    justify-content: flex-end;
+    float: right;
+}
+
+.profilePostDate {
+    display: flex;
+    font-weight: lighter;
+    font-size: small;
+    margin-top: -15px;
+}
+
+.managePost {
+    display: flex;
+    margin: 5px 0px 5px;
+}
+
+.managePost > button:last-child {
+    margin-left: 15px;
+}
+
+.managePostButton {
+    cursor: pointer;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border: solid #1f628d 1px;
+    text-decoration: none;
+}
+
+.managePostButton:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+.profileEditPostFormButtons {
+    display: flex;
+    margin: 0px 10px 10px;
+}
+
+.profileEditPostFormButtons > *{
+    margin: 0px 15px 0px 0px;
+}
+
+.navRightButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navRightButtons > *:last-child{
+    margin-left: 15px;
+}
